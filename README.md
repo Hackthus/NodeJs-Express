@@ -11,7 +11,7 @@ Cette application est une API RESTful construite avec Express.js pour gérer des
 
 1. Clonez ce dépôt :
  
-    git clone https://github.com/votre-utilisateur/votre-depot.git
+    git clone https://github.com/Hackthus/NodeJs-Express.git
     cd NodeJs-Express
  
 2. Installez les dépendances :
@@ -22,7 +22,7 @@ Cette application est une API RESTful construite avec Express.js pour gérer des
 
 Assurez-vous d'avoir un fichier `db.js` qui exporte une fonction `connectDB` pour se connecter à votre base de données MongoDB. Le fichier `db.js` pourrait ressembler à ceci :
 
-```javascript
+ javascript
 import { MongoClient } from 'mongodb';
 
 const uri = 'mongodb://localhost:27017'; // ou votre URI MongoDB
