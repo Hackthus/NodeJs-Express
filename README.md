@@ -33,20 +33,16 @@ export async function connectDB() {
   return client.db('nom-de-votre-bdd');
 }
 
-Utilisation
+## Utilisation
 
-    Démarrez le serveur :
+ Démarrez le serveur :
+ npm start
+ Le serveur sera accessible à l'adresse http://localhost:3000.
 
-    bash
+## Routes de l'API
+# GET /
 
-    npm start
-
-    Le serveur sera accessible à l'adresse http://localhost:3000.
-
-Routes de l'API
-GET /
-
-Récupère toutes les tâches.
+  Récupère toutes les tâches.
 
     Réponse : 200 OK
 
@@ -63,7 +59,7 @@ Récupère toutes les tâches.
   ]
 }
 
-Réponse en cas d'erreur : 500 Internal Server Error
+## Réponse en cas d'erreur : 500 Internal Server Error
 
 json
 
@@ -71,9 +67,9 @@ json
       "message": "An error occurred"
     }
 
-POST /
+#  POST /
 
-Ajoute une nouvelle tâche.
+  Ajoute une nouvelle tâche.
 
     Corps de la requête :
 
@@ -93,7 +89,7 @@ json
   "message": "Task added successfully!"
 }
 
-Réponse en cas d'erreur de validation : 400 Bad Request
+  Réponse en cas d'erreur de validation : 400 Bad Request
 
 json
 
@@ -112,7 +108,7 @@ json
   ]
 }
 
-Réponse en cas d'erreur serveur : 500 Internal Server Error
+ Réponse en cas d'erreur serveur : 500 Internal Server Error
 
 json
 
@@ -120,7 +116,7 @@ json
       "message": "An error occurred"
     }
 
-DELETE /
+#  DELETE /
 
 Supprime une tâche en fonction de son taskId.
 
@@ -168,7 +164,7 @@ json
       "message": "An error occurred"
     }
 
-Auteur
+## Auteur
 
-    Votre Nom (@votre-utilisateur)
+    Votre Nom h@ckthus
     Email: hackthus@gmail.com
